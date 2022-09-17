@@ -1,0 +1,390 @@
+.row1 {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: wheat;
+    height: 350px;
+
+}
+
+.navbar-toggler button {
+    background-color: aliceblue;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: red;
+}
+
+.img1 {
+    width: 100%;
+    height: 350px;
+}
+
+.bg-img {
+    padding: 70px 20px;
+    width: 100%;
+    height: 600px;
+
+}
+
+.bg-img1 {
+    background-image: url("cns-images/formbg.jpg");
+
+    background-repeat: no-repeat;
+
+}
+
+.foot1 {
+    margin-top: 10px;
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+
+}
+
+.bg2 {
+    background-color: cadetblue;
+}
+
+.foot2 {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.foot3 {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.foot3-1 {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.foot3-2 {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* flip cards */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: wheat;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: rgb(241, 231, 211);
+    color: black;
+    transform: rotateY(180deg);
+    text-align: justify;
+}
+
+.flip-imgg {
+    width: 15px;
+    height: 20px;
+    /* position: absolute;
+    left: 1; */
+}
+
+.flexx {
+    display: flex;
+    justify-content: flex-start;
+    width: 72%;
+}
+
+.flexx2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pad {
+    padding: 10px;
+}
+
+
+/*------------------------------- new css ----------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#zz {
+    z-index: 1111;
+}
+
+
+.top-header-area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    padding-left: 8px;
+}
+
+
+.top-header-area .info .bgcol .anchorr a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-header-area .info .bgcol .anchorr a:hover {
+    color: red;
+}
+
+
+.section {
+    background-image: url('cns-images/heroImg.png');
+    height: 100vh;
+    background-size: cover;
+    filter: brightness(75%);
+
+
+
+}
+
+.section1 {
+    background-image: url('cns-images/iron.jpg');
+    height: 100vh;
+    background-size: cover;
+
+
+}
+
+.section2 {
+    background-image: url('cns-images/apple.jpg');
+    height: 100vh;
+    background-size: cover;
+    filter: brightness(75%);
+
+}
+
+.section3 {
+    background-image: url('cns-images/services.jpg');
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.bgcol {
+    background-color: black;
+    opacity: 0.6;
+
+}
+
+.hrr {
+
+    border-style: none;
+    border-top-style: dotted;
+    border-color: rgb(73, 70, 70);
+    border-width: 6px;
+    width: 5%;
+    margin-left: 47%;
+
+
+
+}
+
+.card-bottom {
+    background-color: powderblue;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Overlay */
+.over {
+    position: relative;
+
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.over:hover .image {
+    opacity: 0.3;
+}
+
+.over:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: rgb(89, 22, 22);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 32px;
+}
+
+/*-------------------------- Responsiveness media query ----------------------------------------------*/
+
+@media only screen and (max-width: 770px) {
+    .navbar-brand {
+        width: 250px;
+        margin-top: 25px;
+    }
+
+
+}
+
+@media only screen and (max-width: 352px) {
+    .navbar-brand {
+        width: 150px;
+        margin-top: 25px;
+
+    }
+    .txt{
+        font-size: 10px;
+    }
+
+
+}
+
+/* -----------------------------------------black stripe------------------------------------- */
+
+@media only screen and (max-width: 500px) {
+
+    .info {
+        font-size: 11px;
+    }
+
+
+}
+
+@media only screen and (max-width: 371px) {
+
+    .info {
+        font-size: 8px;
+    }
+
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .info {
+        font-size: 9px;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .info {
+        font-size: 7px;
+    }
+
+
+}
+
+/* If the screen size is 1200px wide*  about iphone and index page information text/
+@media (min-width: 1200px) {
+    .responsive-font {
+      font-size: 18px;
+    }
+  }
+  /* If the screen size is smaller than 500px */
+@media (max-width: 500px) {
+    .responsive-font {
+        font-size: 16px;
+    }
+}
+
+
+/* ----------------------Background Image----------------- */
+
+
+@media (max-width: 600px) {
+    .section1 {
+        height: 50vh;
+    }
+
+    .section2 {
+        height: 50vh;
+    }
+
+    .section {
+        height: 50vh;
+    }
+
+    .section3 {
+        height: 50vh;
+    }
+
+
+}
+
+
+@media (max-width: 400px) {
+
+
+
+    .textt {
+
+        width: 95%;
+        margin-top: 30px;
+    }
+
+
+}
